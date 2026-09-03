@@ -9,6 +9,7 @@
 #By: Juan Diego Cardona Betancourt
 #juand.cardonab@uqvirtual.edu.co
 
+
 print("Introducción a R. (Rstudio)")
 browseURL(url = "https://cran.r-project.org/doc/FAQ/R-FAQ.html", browser = getOption("browser"))
 browseURL(url = "https://r-coder.com/r-introduction/", browser = getOption("browser"))
