@@ -588,3 +588,13 @@ rm(GEIH25,ENERO, FEBRERO , MARZO , ABRIL , MAYO , JUNIO , JULIO , AGOSTO , SEPTI
 ## Borramos variables repetidas----
 GEIH = GEIH |> dplyr::select(-ends_with(c( ".2" , ".4", ".6" , ".8" , ".10" , ".12" ,".14" ))) |> 
   mutate( MES = as.character(substr( PERIODO , start = 5, stop = 6)))
+
+#Descriptivas
+
+head(GEIH)
+str(GEIH, list.len=445)
+skimr::skim(GEIH)
+
+xtabs( FEX_C18 ~ MES , data= GEIH , addNA = TRUE)
+
+
