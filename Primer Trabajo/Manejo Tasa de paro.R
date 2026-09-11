@@ -51,7 +51,7 @@ ENERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Enero 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -59,7 +59,7 @@ ENERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Enero 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -67,7 +67,7 @@ ENERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Enero 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -75,7 +75,7 @@ ENERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Enero 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -96,7 +96,7 @@ FEBRERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Febrero 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -104,7 +104,7 @@ FEBRERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Febrero 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -112,7 +112,7 @@ FEBRERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Febrero 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -120,7 +120,7 @@ FEBRERO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Febrero 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -141,7 +141,7 @@ MARZO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Marzo 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -149,7 +149,7 @@ MARZO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Marzo 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -157,7 +157,7 @@ MARZO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Marzo 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -165,7 +165,7 @@ MARZO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Marzo 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -186,7 +186,7 @@ ABRIL = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Abril 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -194,7 +194,7 @@ ABRIL = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Abril 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -202,7 +202,7 @@ ABRIL = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Abril 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -210,7 +210,7 @@ ABRIL = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Abril 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -231,7 +231,7 @@ MAYO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Mayo 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -239,7 +239,7 @@ MAYO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Mayo 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -247,7 +247,7 @@ MAYO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Mayo 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -255,7 +255,7 @@ MAYO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Mayo 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1") , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -276,7 +276,7 @@ JUNIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Junio 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -284,7 +284,7 @@ JUNIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Junio 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -292,7 +292,7 @@ JUNIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Junio 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -300,7 +300,7 @@ JUNIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Junio 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -321,7 +321,7 @@ JULIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Julio 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -329,7 +329,7 @@ JULIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Julio 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -337,7 +337,7 @@ JULIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Julio 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -345,7 +345,7 @@ JULIO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Julio 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -366,7 +366,7 @@ AGOSTO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Agosto 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -374,7 +374,7 @@ AGOSTO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Agosto 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -382,7 +382,7 @@ AGOSTO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Agosto 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -390,7 +390,7 @@ AGOSTO = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Agosto 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -411,7 +411,7 @@ SEPTIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Septiembre 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -419,7 +419,7 @@ SEPTIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Septiembre 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -427,7 +427,7 @@ SEPTIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Septiembre 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -435,7 +435,7 @@ SEPTIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Septiembre 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -456,7 +456,7 @@ OCTUBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Octubre 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -464,7 +464,7 @@ OCTUBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Octubre 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -472,7 +472,7 @@ OCTUBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Octubre 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -480,7 +480,7 @@ OCTUBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Octubre 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -501,7 +501,7 @@ NOVIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Noviembre 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -509,7 +509,7 @@ NOVIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Noviembre 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -517,7 +517,7 @@ NOVIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Noviembre 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -525,7 +525,7 @@ NOVIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Noviembre 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -546,7 +546,7 @@ DICIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Diciembre 2025/No ocupados.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -554,7 +554,7 @@ DICIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Diciembre 2025/Fuerza de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -562,7 +562,7 @@ DICIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Diciembre 2025/Otros ingresos e impuestos.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> 
@@ -570,7 +570,7 @@ DICIEMBRE = merge(
     x = ,
     y = read_delim(
       file = paste0( GEIH25 , "/Diciembre 2025/Otras formas de trabajo.CSV") , delim = ";" ,
-      locale = locale( decimal_mark = "." ) , col_names = TRUE ) , 
+      locale = locale( decimal_mark = ".",encoding = "Latin1" ) , col_names = TRUE ) , 
     by = c( "DIRECTORIO" , "SECUENCIA_P" , "ORDEN" ) , 
     all.x = T , suffixes = c( "" ,".4" )
   ) |> data.frame()
@@ -592,7 +592,7 @@ GEIH = GEIH |> dplyr::select(-ends_with(c( ".2" , ".4", ".6" , ".8" , ".10" , ".
 #Descriptivas
 
 head(GEIH)
-str(GEIH, list.len=445)
+str(GEIH, list.len=463)
 skimr::skim(GEIH)
 
 xtabs( FEX_C18 ~ MES , data= GEIH , addNA = TRUE)
