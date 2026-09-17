@@ -594,7 +594,9 @@ GEIH = GEIH |> dplyr::select(-ends_with(c( ".2" , ".4", ".6" , ".8" , ".10" , ".
 head(GEIH)
 str(GEIH, list.len=463)
 skimr::skim(GEIH)
+table(GEIH$MES)
 
+##Esta bien?----
 xtabs( FEX_C18 ~ MES , data= GEIH , addNA = TRUE)
 
 
