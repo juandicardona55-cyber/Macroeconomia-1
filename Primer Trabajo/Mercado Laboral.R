@@ -52,13 +52,13 @@ xtabs( FEX_C18 ~ OCI + MES , data= GEIH , addNA = TRUE)
 xtabs( FEX_C18 ~ DSI + MES , data= GEIH , addNA = TRUE)
 
 
-#Indicadores de mercado laboral
+#INDICADORES DE MERCADO LABORAL
 
 
-####enero-marzo
+####ENERO-MARZO
 
 
-###Datos para hallar indicadores
+###DATOS PARA HALLAR INDICADORES
 
 #Ocupados trimestre 1
 
@@ -125,7 +125,7 @@ PET1=(GEIH %>%
         ))
 PET1
 
-###Solucion indicadores
+###SOLUCION INDICADORES 1
 
 #Tasa bruta de participacion
 
@@ -148,10 +148,10 @@ TO1=(OC1/(PET1))*100
 TO1
 
 
-####Julio-Septiembre
+####JULIO-SEPTIEMBRE
 
 
-###Datos para hallar indicadores
+###DATOS PARA HALLAR INDICADORES
 
 #Ocupados trimestre 3
 
@@ -218,7 +218,7 @@ PET3=(GEIH %>%
         ))
 PET3
 
-###Solucion indicadores
+###SOLUCION INDICADORES
 
 #Tasa bruta de participacion
 
@@ -240,7 +240,7 @@ TP3
 TO3=(OC3/(PET3))*100
 TO3
 
-#Tabla de datos indicadores
+#TABLAS DE DATOS INDICADORES
  
 #Para pasar meses a trimestres 
 GEIH <- GEIH %>% 
@@ -255,15 +255,36 @@ table(GEIH$TRIMESTRE)
 
 #Tabla de indicadores
 
-TASAS<-data.frame(
-  TRIMESTRE= c(1,3),
-  TBP=c(TBP1,TBP3),
-  TGP=c(TGP1,TGP3)
-)
-TASAS
+#ENERO-MARZO
 
-#terminar y organizar
-data.frame(
-  TRIMESTRE=c(1,3),
-  DSI1
-  )
+TABIND1<-data.frame(
+  TRIMESTRE=1,
+  TBP1=TBP1,
+  TGP1=TGP1,
+  TP1=TP1,
+  TO1=TO1
+)
+
+TABIND1<- TABIND1 %>% rename(TBP= OCUPADOSI)
+TABIND1<- TABIND1 %>% rename(TGP= OCUPADOSI.1)
+TABIND1<- TABIND1 %>% rename(TP= DESOCUPADOSI)
+TABIND1<- TABIND1 %>% rename(TO= OCUPADOSI.2)
+
+TABIND1
+
+#JULIO-SEPTIEMBRE
+
+TABIND3<-data.frame(
+  TRIMESTRE=3,
+  TBP3=TBP3,
+  TGP3=TGP3,
+  TP3=TP3,
+  TO3=TO3
+)
+
+TABIND3<- TABIND3 %>% rename(TBP= OCUPADOSIII)
+TABIND3<- TABIND3 %>% rename(TGP= OCUPADOSIII.1)
+TABIND3<- TABIND3 %>% rename(TP= DESOCUPADOSIII)
+TABIND3<- TABIND3 %>% rename(TO= OCUPADOSIII.2)
+
+TABIND3
